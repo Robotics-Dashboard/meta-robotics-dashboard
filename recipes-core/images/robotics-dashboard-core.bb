@@ -7,5 +7,6 @@ LICENSE = "MIT"
 
 IMAGE_INSTALL:append = " iproute2 iptables bash zfs cri-o bridge-utils wireguard-tools chrony openssh nano python3-json python3-dotenv python3-logging docker docker-compose"
 IMAGE_INSTALL:append:aarch64 = " kernel-module-bridge"
+IMAGE_ROOTFS_EXTRA_SPACE:append = " + 262144"
 
 # IMAGE_INSTALL:append = " robotics-dashboard-heartbeat"
