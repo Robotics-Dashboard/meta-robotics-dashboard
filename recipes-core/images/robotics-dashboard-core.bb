@@ -9,4 +9,4 @@ IMAGE_INSTALL:append = " iproute2 iptables bash zfs cri-o bridge-utils wireguard
 IMAGE_INSTALL:append:aarch64 = " kernel-module-bridge"
 IMAGE_ROOTFS_EXTRA_SPACE:append = " + 262144"
 
-# IMAGE_INSTALL:append = " robotics-dashboard-heartbeat"
+IMAGE_INSTALL:append = " heartbeat"
